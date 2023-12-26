@@ -1,0 +1,246 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>codecommunity24 Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="top_page">
+            <h1 id="title">codecommunity24 Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        
+        <form class="survey-form" id="survey-form">
+            
+            <div class="first_panel">
+                <label class="first_panel_label" id="name-label">Name<input class="first_panel_input" type="text" id="name" placeholder="Enter your name" required/></label>
+                <label class="first_panel_label" id="email-label">Email<input class="first_panel_input" type="email" id="email" placeholder="Enter your Email" required/></label>
+                <label class="first_panel_label" id="number-label">Age (optional)<input class="first_panel_input" type="number" id="number" min="10" max="99" placeholder="Age" /></label>
+                <label class="first_panel_label" >Which option best describes your current role?
+                    <select class="first_panel_select" id="dropdown">
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="second_panel">
+                <label class="second_panel_label">Would you recommend codecummunity24 to a friend?</label>
+                <label class="second_panel_label_two"><input type="radio" name="recommend" value="definitely" /> Definitely</label>
+                <label class="second_panel_label_two"><input type="radio" name="recommend" value="maybe" /> Maybe</label>
+                <label class="second_panel_label_two"><input type="radio" name="recommend" value="notsure" /> Not sure</label>  
+            </div>
+
+            <div class="third_panel">
+                <label class="third_panel_label">What is your favorite feature of codecommunity24?
+                    <select name="feature" class="third_panel_select">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open source">Open Source</option>
+                    </select>
+                </label>
+            </div>
+
+
+            <div class="fourty_panel">
+                <label class="fourty_panel_label">What would you like to see improved? (Check all that apply)</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="front-end-projects" /> Front-end Projects</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="back-end-projects" /> Back-end Projects</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="data-visualization" /> Data Visualization</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="challenges" /> Challenges</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="open-source-community" /> Open Source Community</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="gitter-help-rooms" /> Gitter help rooms</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="videos" /> Videos</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="city-meetups" /> City Meetups</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="wiki" /> Wiki</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="forum" /> Forum</label>
+                <label class="fourty_panel_label_two"><input type="checkbox" name="improve" value="additional-courses" /> Additional Courses</label>                  
+            </div>
+
+            <div class="fifty_panel">
+                <label class="fifty_panel_label">Any comments or suggestions?<textarea class="fifty_panel_textarea" name="comment" placeholder="Enter your comment here..."></textarea></label>
+            </div>
+
+            <input class="submit_button" type="submit" value="Submit" id="submit" />
+
+        </form>
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    background-color: #606C38;
+}
+
+.top_page {
+    display: center;
+    background-color: #283618;
+    color: #DDA15E;
+    padding: 32px;
+    margin: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Garamond;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-family: Garamond;
+}
+
+.survey-form {
+    display: center;
+    margin: 25px;
+}
+
+.first_panel {
+    display: center;
+    width: 100%;
+    height: 100%;
+    background-color: #BC6C25;
+    color: #606C38;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+.first_panel_label {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+ 
+
+.first_panel_input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+.first_panel_select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 15px;   
+}
+
+.second_panel {
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    background-color: #283618;
+    color: #DDA15E;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+.second_panel_label {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+
+.second_panel_label_two {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 17px;
+}
+
+.third_panel {
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    background-color: #BC6C25;
+    color: #283618;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+.third_panel_label {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+
+.third_panel_select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 15px;   
+}
+
+
+.fourty_panel {
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    background-color: #283618;
+    color: #DDA15E;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+.fourty_panel_label {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+
+.fourty_panel_label_two {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 17px;
+}
+
+
+.fifty_panel {
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    background-color: #BC6C25;
+    color: #283618;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+.fifty_panel_label {
+    display: block;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+
+.fifty_panel_textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 15px;   
+}
+
+
+.submit_button {
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    background-color: #DDA15E;
+    color: #283618;
+    border-color: #283618;
+    font-size: 20px;
+    padding: 32px 0;
+    margin: 25px 0;
+}
+
+** end of undefined **
+
